@@ -1,0 +1,6 @@
+单例模式：确保一个类只有一个实例，并提供一个全局访问点。
+
+没有实现书中的范例，而是与第四章：工厂模式结合在一起，使用三种不同的方法解决单JVM多线程环境下的单例初始化问题，详见
+CAPizzaIngredientFactory、NYPizzaIngredientFactory和ChicagoPizzaIngredientFactory。
+3种方式如何选择？如果new一个新的实例，对系统资源消耗基本忽略不计的话，直接使用synchronized方法；如果new一个实例代价很高，
+可以选用eagerly方式；如果JRE版本是1.5及以上，可以用双重加锁。
