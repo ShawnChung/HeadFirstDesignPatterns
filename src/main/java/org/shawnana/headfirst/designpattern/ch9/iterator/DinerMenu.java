@@ -2,7 +2,7 @@ package org.shawnana.headfirst.designpattern.ch9.iterator;
 
 import java.util.Iterator;
 
-public class DinerMenu {
+public class DinerMenu implements Menu<MenuItem> {
 	static final int MAX_ITEMS = 6;
 	int numberOfItems = 0;
 	MenuItem[] items;
